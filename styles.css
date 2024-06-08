@@ -1,6 +1,11 @@
 a{
     text-decoration: none;
 }
+
+a:link, :visited {
+    color: #000;
+}
+
 .whatsapp-float {
     position: fixed;
     width: 60px;
