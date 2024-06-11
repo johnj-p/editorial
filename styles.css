@@ -44,7 +44,7 @@ ul{
     font-size: 40px;
 }
 
-#menu-toggle{
+#menu-toggle, #menu{
     display: none;
 }
 
