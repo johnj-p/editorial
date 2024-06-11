@@ -50,5 +50,13 @@ ul{
 
 .menu-icon {
     cursor: pointer;
-    font-size: 15px;
+    font-size: 10px;
+}
+
+.footer-links{
+    display: flex;
+    flex-flow: row wrap;
+}
+.footer-icon{
+    margin: 5px;
 }
