@@ -1,9 +1,25 @@
 a{
     text-decoration: none;
+    color: #000;
 }
 
-a:link, :visited {
-    color: #000;
+.volver-arriba {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    top: 40px;
+    right: 40px;
+    background-color: #34495E;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+  }
+
+.fa-arrow-up{
+    margin-top: 5px;
+    font-size: 25px;
 }
 
 .whatsapp-float {
