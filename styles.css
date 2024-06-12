@@ -1,9 +1,31 @@
-a{
-    text-decoration: none;
-    color: #000;
+:root {
+    --color-fondo: #ffffff;
+    /* Color de fondo claro */
+    --color-texto: #000000;
+    /* Color de texto oscuro */
 }
 
-ul{
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-fondo: #000000;
+        /* Color de fondo oscuro */
+        --color-texto: #ffffff;
+        /* Color de texto claro */
+    }
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+ul {
     list-style: none;
 }
 
@@ -20,9 +42,9 @@ ul{
     padding: 10px;
     border-radius: 50px;
     text-align: center;
-  }
+}
 
-.fa-arrow-up{
+.fa-arrow-up {
     margin-top: 5px;
     font-size: 25px;
 }
@@ -44,7 +66,8 @@ ul{
     font-size: 40px;
 }
 
-#menu-toggle, #menu{
+#menu-toggle,
+#menu {
     display: none;
 }
 
@@ -53,10 +76,11 @@ ul{
     font-size: 10px;
 }
 
-.footer-links{
+.footer-links {
     display: flex;
     flex-flow: row wrap;
 }
-.footer-icon{
+
+.footer-icon {
     margin: 5px;
 }
