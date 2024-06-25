@@ -5,19 +5,24 @@
     /* Color de texto oscuro */
 }
 
-/* Modo oscuro */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-fondo: #000000;
-        /* Color de fondo oscuro */
-        --color-texto: #ffffff;
-        /* Color de texto claro */
-    }
-}
-
 body {
     background-color: var(--color-fondo);
     color: var(--color-texto);
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+h1{
+    margin-left: 20px;
+    display: inline;
+}
+
+.home{
+    align-content: center;
 }
 
 a {
@@ -33,7 +38,7 @@ ul {
     position: fixed;
     width: 30px;
     height: 30px;
-    top: 40px;
+    bottom: 40px;
     right: 40px;
     background-color: #34495E;
     display: none;
@@ -47,23 +52,6 @@ ul {
 .fa-arrow-up {
     margin-top: 5px;
     font-size: 25px;
-}
-
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-}
-
-.my-float {
-    margin-top: 10px;
-    font-size: 40px;
 }
 
 #menu-toggle, #menu {
@@ -83,6 +71,11 @@ ul {
 .footer-links {
     display: flex;
     flex-flow: row wrap;
+}
+
+.fa-facebook-square, .fa-instagram, .fa-at, .fa-whatsapp{
+    font-size: 30px;
+    font-weight: 700;
 }
 
 li{
